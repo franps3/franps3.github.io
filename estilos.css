@@ -141,3 +141,8 @@ footer {
 .categoria:hover img {
   filter: brightness(0.5);
 }
+
+article img{
+  width: 200px;
+  height: auto;
+}
