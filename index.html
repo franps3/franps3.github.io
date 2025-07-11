@@ -1,52 +1,121 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jardín Botánico</title>
-  <link rel="stylesheet" href="estilos.css" />
+  <link rel="icon" href="images/icono.webp" type="image/x-icon" />
+  <link rel="stylesheet" href="styles/main.css" />
 </head>
+
 <body>
   <header>
     <h1>Jardín Botánico</h1>
     <nav>
       <ul class="botonera">
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="estatuas.html">Esculturas</a></li>
-        <li><a href="verdes.html">Zonas Verdes</a></li>
-        <li><a href="plantas.html">Plantas y Flores</a></li> <!--hacer bn la botonera, capaz es medio redundante tener las cosas dos veces xd-->
+        <li><a href="pages/estatuas.html">Esculturas</a></li>
+        <li><a href="pages/verdes.html">Zonas Verdes</a></li>
+        <li><a href="pages/plantas.html">Plantas y Flores</a></li>
       </ul>
     </nav>
   </header>
 
-<main>
-  <section id="inicio">
-    <h2>Descubrí el Jardín Botánico Carlos Thays a través de nuestras fotos</h2>
-    <p>Capturamos fotos del Jardín Botánico Carlos Thays. Hacé click en los items para ver nuestras fotos y la info de cada lugar. ¡Explorá con nosotros este espacio lleno de verde, esculturas y rincones para descubrir!</p>
-  </section>
+  <main>
+    <section id="inicio">
+      <h2>Explora el Jardín Botánico Carlos Thays en Imágenes</h2>
+      <p>Explorá la belleza y diversidad del Jardín Botánico Carlos Thays a través de una selección de imágenes que capturan su naturaleza, arte y tranquilidad.</p>
+    </section>
 
-  <section class="portada-galeria">
-    <a href="estatuas.html">
-    <div class="categoria" onclick="location.href='#estatuas'">
-      <img src="imagenes/estatua.jpg" alt="Estatuas" />
-      <span>ESCULTURAS</span></a>
-    </div>
-    <a href="verdes.html">
-    <div class="categoria" onclick="location.href='#zonas-verdes'">
-      <img src="imagenes/zonasverdes.jpg" alt="Zonas Verdes">
-      <span>ZONAS VERDES</span></a>
-    </div>
-    <a href="plantas.html">
-    <div class="categoria" onclick="location.href='#plantas'">
-      <img src="imagenes/flor_plantas.jpg" alt="Plantas y Flores">
-      <span>PLANTAS Y FLORES</span></a>
-    </div>
-  </section>
-</main>
+    <section class="portada-galeria">
+      <a href="pages/estatuas.html" class="categoria">
+        <img src="images/portadasIndex/estatua.jpg" alt="Estatuas" />
+        <span>ESCULTURAS</span>
+      </a>
+
+      <a href="pages/verdes.html" class="categoria">
+        <img src="images/portadasIndex/zonasverdes.jpg" alt="Zonas Verdes" />
+        <span>ZONAS VERDES</span>
+      </a>
+
+      <a href="pages/plantas.html" class="categoria">
+        <img src="images/portadasIndex/flor_plantas.jpg" alt="Plantas y Flores" />
+        <span>PLANTAS Y FLORES</span>
+      </a>
+    </section>
+
+    <section>
+      <h2>Imágenes destacadas</h2>
+      <p>En esta sección presentamos una selección de fotografías destacadas que capturan la belleza y diversidad del jardín. Podes clickear en la imagen que desees para verla con mas detalle.</p>
+      <section class="imagenes-destacadas">
+        <article class="ancho-total-grid comienzo-article">
+          <h3>Los Primeros Fríos</h3>
+        </article>
+        <article class="article-imagen"><img src="images/estatuas/frios.jpg" alt="Escultura Los Primeros Fríos"></article>
+        <article>
+          <p class="desc-imagen">Fue realizado por Miguel Blay y Fábregas. Representa a un anciano sentado cuyas manos entrelazadas expresan
+            el crudo rigor del invierno. También representa a una niña que se acurruca en el pecho de un anciano, ambos
+            desnudos.</p>
+        </article>
+
+        <article class="ancho-total-grid comienzo-article">
+          <h3>El Camino Bajo la Arboleda</h3>
+        </article>
+        <article class="article-imagen"><img src="images/verdes/zona1.jpg" alt="El Camino Bajo la Arboleda"></article>
+        <article>
+          <p class="desc-imagen">Un sendero de tierra rojiza que se adentra en un área de vegetación muy densa y árboles altos, ofreciendo un paseo sombreado y tranquilo.</p>
+        </article>
+
+        <article class="ancho-total-grid comienzo-article">
+          <h3>Dracaena Draco</h3>
+        </article>
+        <article class="article-imagen"><img src="images/plantas/draco.jpg" alt="Dracaena Draco"></article>
+        <article>
+          <p class="desc-imagen">Comúnmente conocido como drago, es una especie originaria de las Islas Canarias y de regiones subtropicales del norte de África. Es un árbol de crecimiento lento, con un porte escultórico y un solo tronco grueso que con el tiempo se ramifica formando una copa en forma de paraguas. Sus hojas son rígidas, alargadas y de color verde azulado, dispuestas en rosetas en los extremos de las ramas. Una de sus características más llamativas es su savia rojiza, conocida como "sangre de drago", que históricamente fue usada como tinte y en medicina tradicional. El drago es considerado una especie simbólica y longeva, capaz de vivir cientos de años.</p>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <div id="overlay">
+    <span id="closeBtn">&times;</span>
+    <img src="" alt="Imagen ampliada" />
+  </div>
 
   <footer>
-    <p>&copy; 2025 Jardín Botánico. Por Francisco Ferreyra, Khalil Kouri y Marco Zuzunaga</p>
+    <section>
+      <h3>Información</h3>
+      <p>Dirección: Av. Santa Fe 3957, Palermo, CABA</p>
+      <p>
+        <a target="_blank" href="https://buenosaires.gob.ar/vicejefatura/ambiente/jardin-botanico" rel="noopener noreferrer">Click aquí</a> para ingresar a la página oficial del Jardín Botánico.
+      </p>
+      <h3>Horarios</h3>
+      <p>Desde el 22/9 al 21/3:</p>
+      <ul class="lista-sin-decoracion">
+        <li>Martes a viernes, de 8 a 19 hs. (ingreso hasta 18:30 hs.)</li>
+        <li>Sábados, domingos y feriados, de 9:30 a 19 hs. (ingreso hasta 18:30 hs.)</li>
+      </ul>
+      <p>Desde el 22/3 al 21/9:</p>
+      <ul class="lista-sin-decoracion">
+        <li>Martes a viernes, de 8 a 18 hs. (ingreso hasta 17:30 hs.)</li>
+        <li>Sábados, domingos y feriados, de 9:30 a 18 hs. (ingreso hasta 17:30 hs.)</li>
+      </ul>
+      <p>Lunes - CERRADO</p>
+    </section>
+    <section>
+      <h3>Ubicación</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1381.1122127436138!2d-58.41899258224448!3d-34.58248624185664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb581fe35595f%3A0x801e76c3f778715e!2sJard%C3%ADn%20Bot%C3%A1nico%20Carlos%20Thays!5e0!3m2!1ses-419!2sar!4v1752240507908!5m2!1ses-419!2sar"
+        width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        title="Mapa del Jardín Botánico Carlos Thays">
+      </iframe>
+    </section>
+    <p class="copy ancho-total-grid">&copy; 2025 Jardín Botánico. Por Francisco Ferreyra, Khalil Kouri y Marco Zuzunaga
+    </p>
   </footer>
-</body>
-</html>
 
+  <script src="js/main.js"></script>
+</body>
+
+</html>
